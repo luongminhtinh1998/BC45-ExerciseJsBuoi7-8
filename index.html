@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BC45-baitap</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container my-5">
+		<h1 class="mb-3">Chức năng mảng số nguyên</h1>
+		<form>
+			<div class="mb-3">
+				<label for="numberList" class="form-label">Nhập các số nguyên, cách nhau bằng dấu phẩy</label>
+				<input type="text" class="form-control" id="numberList" name="numberList" placeholder="VD: 1, 2, 3">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<hr>
+		<div class="row">
+			<div class="col-md-3">
+				<label for="functionSelect" class="form-label">Chọn chức năng</label>
+				<select class="form-select" id="functionSelect">
+					<option value="1">Tổng các số dương trong mảng</option>
+					<option value="2">Đếm có bao nhiêu số dương trong mảng</option>
+					<option value="3">Tìm số nhỏ nhất trong mảng</option>
+					<option value="4">Tìm số dương nhỏ nhất trong mảng</option>
+					<option value="5">Tìm số chẵn cuối cùng trong mảng</option>
+					<option value="6">Đổi chỗ 2 giá trị trong mảng theo vị trí</option>
+					<option value="7">Sắp xếp mảng theo thứ tự tăng dần</option>
+					<option value="8">Tìm số nguyên tố đầu tiên trong mảng</option>
+					<option value="9">Tìm số nguyên trong mảng số thực</option>
+					<option value="10">So sánh số lượng số dương và số lượng số âm</option>
+				</select>
+			</div>
+			<div class="col-md-9">
+				<div class="mb-3">
+					<label for="resultArea" class="form-label">Kết quả</label>
+					<textarea class="form-control" id="resultArea" rows="8" readonly></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+	<script src="/index.js"></script>
+</body>
+</html>
